@@ -11,10 +11,20 @@ The following functions are used in the data flow of this project:
 
 _**Models:**_ 
 
-**1. Order
-2. User
-3. Address
-4. Product**
+The Address class contains fields for addressId, addressName, addressLandmark, addressPhoneNumber, addressZipcode, addressState, and a many-to-one mapping to the User class.
+
+The Orders class contains fields for orderId, orderProductQuantity, and three many-to-one mappings to the User, Product, and Address classes.
+
+The Product class contains fields for productId, productName, productPrice, productDes, productCategory, productBrand.
+
+The User class contains fields for userId, userName, userEmail, userPassword, and userPhoneNumber.
+
+**Summary of mappings:**
+
+Address class has a many-to-one mapping to User class
+Orders class has many-to-one mappings to User, Product, and Address classes
+Product class has no mappings to other classes
+User class has no mappings to other classes
 
 _**Controller:**_ 
 
